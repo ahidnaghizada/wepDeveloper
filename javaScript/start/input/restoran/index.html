@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POMIDOR</title>
+    <style>
+        h1{color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Pomidor&Yumurta</h1>
+    nece nefersiz<input type="text" id="yy" placeholder="say">
+    <button class="btn">Hesabla</button>
+    <h2 id="netice"></h2>
+     
+    <img src="pomidor.png" alt="" width="300px" height="250px">
+
+    <script>
+        let btn = document.querySelector('.btn')
+        let netice = document.querySelector('#netice')
+
+        btn.onclick = function () {
+            let yp = + yy.value * 4
+            netice.innerHTML = 'Borcunuz ' + yp + ' AZN'
+        }
+        
+    </script>
+    
+</body>
+</html>

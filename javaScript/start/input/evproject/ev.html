@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev proyekt hazirla</title>
+</head>
+<body>
+    <h1>Kvadrata gore mebleg</h1>
+    Sahe: <input type="text" id="ev" placeholder="Evin kvadratini daxil edin">
+    <button class="btn">Hesabla</button>
+    <h2 id="netice"></h2>
+
+    <script>
+        let btn = document.querySelector('.btn')
+        let netice = document.querySelector('#netice')
+
+        btn.onclick = function () {
+            let kv = + ev.value * 150
+            netice.innerHTML = 'Sizin evinizin temiri ' + kv + ' AZN olacaq'
+        }
+        
+    </script>
+    
+</body>
+</html>
